@@ -1,0 +1,20 @@
+{
+  "native_animation_completed": true,
+  "forecast_source": "ml",
+  "seed": 1,
+  "end_time_days": 170.5,
+  "daily_rows": 171,
+  "trace_equal": {
+    "P2_DAY,": true,
+    "P2_RECV,": true,
+    "P2_CRN,": true
+  },
+  "summary_max_abs_difference": 0.0,
+  "all_pass": true,
+  "native_animated_ple_cap_exceeded": true,
+  "inventory_logic_changed_by_animation": false,
+  "native_log_sha256": "d50de343ca9431767b7bc2bf152118611c0423265230f00c09966d953e6532a9",
+  "golden_log_sha256": "077e9f284d0c99223acf89b9617f2b637741a8cd62e0ca96b9231b5217328809",
+  "visual_evidence": "model/store-view.png; model/store-animation.gif; model/store-animation.mp4",
+  "animation_scope": "Illustrative deterministic customers, cashiers and truck; live aggregate stock bars and model KPIs"
+}

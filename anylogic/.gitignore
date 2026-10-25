@@ -1,0 +1,13 @@
+results/native/
+tools/.build/
+results/*-launch.txt
+results/*-runner.log
+__pycache__/
+claude-resume-2026-10-24/
+CODEX-RESUME-*.md
+HANDOFF.md
+results/animation/raw/
+.pytest_cache/
+dist/
+*.pyc
+*.log

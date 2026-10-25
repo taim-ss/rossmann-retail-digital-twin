@@ -1,0 +1,62 @@
+{
+  "comparisons": {
+    "k_factor": {
+      "excel": 2.129296515069362,
+      "python": 2.129296515069364,
+      "ok": true
+    },
+    "mean_finding": {
+      "excel": 977.1174273598866,
+      "python": 977.1174273598874,
+      "ok": true
+    },
+    "sd_finding": {
+      "excel": 702.7020803809799,
+      "python": 702.7020803809802,
+      "ok": true
+    },
+    "t_ci_low": {
+      "excel": 935.8265599159039,
+      "python": 935.8265599159042,
+      "ok": true
+    },
+    "t_ci_high": {
+      "excel": 1018.4082948038694,
+      "python": 1018.4082948038706,
+      "ok": true
+    },
+    "chain_equals_mean": {
+      "excel": 977.1174273598863,
+      "python": 977.1174273598874,
+      "ok": true
+    },
+    "tornado_swing_lead_time_days": {
+      "excel": 316.79384772126684,
+      "python": 316.7938477212672,
+      "ok": true
+    },
+    "tornado_swing_review_period_days": {
+      "excel": 1992.4954961913013,
+      "python": 1992.4954961913036,
+      "ok": true
+    },
+    "tornado_swing_holding_rate": {
+      "excel": 366.0635873501817,
+      "python": 366.06358735018193,
+      "ok": true
+    },
+    "tornado_swing_margin": {
+      "excel": 377.33785827365534,
+      "python": 377.337858273656,
+      "ok": true
+    },
+    "tornado_swing_order_cost": {
+      "excel": 0,
+      "python": 0.0,
+      "ok": true
+    }
+  },
+  "excel_error_cells": [],
+  "checks_cell": "ALL CHECKS PASS",
+  "all_ok": true
+}

@@ -1,0 +1,44 @@
+// measures.dax: paste each measure into Power BI Desktop (Modeling > New measure).
+// Tables: fact_month_segment, fact_accuracy, fact_cost_kpi (CSV files in powerbi/data/).
+// WAPE and bias cannot be recomputed from monthly aggregates, so they are read from fact_accuracy, which the Python
+// pipeline computed per model, segment and horizon band with store-bootstrap confidence intervals.
+
+Sales (EUR) = SUM ( fact_month_segment[sales_total] )
+
+Open store days = SUM ( fact_month_segment[open_store_days] )
+
+Sales per open store day = DIVIDE ( [Sales (EUR)], [Open store days] )
+
+Promo share of open days =
+    DIVIDE ( SUM ( fact_month_segment[promo_open_days] ), [Open store days] )
+
+Promo sales per promo day =
+    DIVIDE ( SUM ( fact_month_segment[sales_promo_days] ), SUM ( fact_month_segment[promo_open_days] ) )
+
+Non-promo sales per day =
+    DIVIDE (
+        SUM ( fact_month_segment[sales_total] ) - SUM ( fact_month_segment[sales_promo_days] ),
+        SUM ( fact_month_segment[open_store_days] ) - SUM ( fact_month_segment[promo_open_days] )
+    )
+
+// Descriptive only: promotions are not randomised, so this ratio is not a causal uplift.
+Promo day sales ratio = DIVIDE ( [Promo sales per promo day], [Non-promo sales per day] )
+
+// Forecast accuracy: choose a model and horizon band with slicers (one row remains after filtering).
+WAPE = SELECTEDVALUE ( fact_accuracy[wape] )
+WAPE low (95% CI) = SELECTEDVALUE ( fact_accuracy[wape_lo] )
+WAPE high (95% CI) = SELECTEDVALUE ( fact_accuracy[wape_hi] )
+Bias = SELECTEDVALUE ( fact_accuracy[bias] )
+
+// Assumed-cost KPIs: ASSUMPTION-driven, see excel/assumptions_and_sensitivity.xlsx.
+Finding EUR per store-year (base) = MAX ( fact_cost_kpi[base_finding] )
+Tornado swing = SUM ( fact_cost_kpi[swing] )
+
+// Date table: one row per day, explicit bounds (CALENDARAUTO would scan unrelated columns).
+Dim Date =
+    ADDCOLUMNS (
+        CALENDAR ( DATE ( 2013, 1, 1 ), DATE ( 2015, 12, 31 ) ),
+        "Year", YEAR ( [Date] ),
+        "Month number", MONTH ( [Date] ),
+        "Month start", DATE ( YEAR ( [Date] ), MONTH ( [Date] ), 1 )
+    )

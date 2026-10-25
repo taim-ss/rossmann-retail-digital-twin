@@ -1,0 +1,117 @@
+{
+  "mode": "real",
+  "stores": 1115,
+  "qa": {
+    "store_days_in_grid": 1050330,
+    "rows_missing_from_raw (R1)": 33121,
+    "open_value_imputed (R3)": 0,
+    "closed_days_total": 205938,
+    "closed_with_positive_sales_zeroed (R4)": 0,
+    "open_with_zero_sales_kept (R5)": 54,
+    "long_closure_days (R6)": 34849,
+    "stores_with_a_long_closure (R6)": 221,
+    "state_holiday_days (R2)": 31050
+  },
+  "pooled_wape": [
+    {
+      "model": "ml",
+      "wape": 0.09617,
+      "wape_lo": 0.09491,
+      "wape_hi": 0.09752,
+      "bias": 0.00644,
+      "bias_lo": 0.00537,
+      "bias_hi": 0.00756
+    },
+    {
+      "model": "snaive4",
+      "wape": 0.1808,
+      "wape_lo": 0.17848,
+      "wape_hi": 0.18302,
+      "bias": 0.02266,
+      "bias_lo": 0.02166,
+      "bias_hi": 0.0236
+    },
+    {
+      "model": "hw",
+      "wape": 0.2098,
+      "wape_lo": 0.20667,
+      "wape_hi": 0.21284,
+      "bias": 0.00506,
+      "bias_lo": 0.0043,
+      "bias_hi": 0.00582
+    },
+    {
+      "model": "snaive1",
+      "wape": 0.23084,
+      "wape_lo": 0.2279,
+      "wape_hi": 0.2338,
+      "bias": 0.01131,
+      "bias_lo": 0.0106,
+      "bias_hi": 0.01199
+    },
+    {
+      "model": "naive",
+      "wape": 0.24446,
+      "wape_lo": 0.24115,
+      "wape_hi": 0.2478,
+      "bias": -0.03334,
+      "bias_lo": -0.03607,
+      "bias_hi": -0.0305
+    }
+  ],
+  "finding_eur_per_store_year": {
+    "mean": 977.1174273598874,
+    "ci95_store_bootstrap": [
+      934.3903500111957,
+      1017.7382862861093
+    ],
+    "k_factor": 2.129296515069364,
+    "assumptions": {
+      "lead_time_days": 5.0,
+      "review_period_days": 7.0,
+      "holding_rate": 0.25,
+      "margin": 0.3,
+      "order_cost": 50.0,
+      "unit_price": 1.0,
+      "service_level": 0.95
+    }
+  },
+  "calibration_rows": 20071,
+  "calibration_demand_fit_accepted_share": 0.06457399103139014,
+  "excel_check": {
+    "status": "ok",
+    "checks_cell": "ALL CHECKS PASS",
+    "comparisons": 11
+  },
+  "contract": {
+    "calibration_store": 164,
+    "stores": [
+      164,
+      39,
+      693,
+      962,
+      259,
+      913,
+      848,
+      279,
+      98,
+      130,
+      668
+    ],
+    "forecast_first": "2015-01-05",
+    "forecast_last": "2015-06-24",
+    "n_forecast_rows_per_file": 1881,
+    "n_demand_rows": 10362,
+    "n_residual_rows": 6166
+  },
+  "powerbi": {
+    "month_rows": 744,
+    "accuracy_rows": 438,
+    "cost_rows": 5
+  },
+  "raw_sha256": {
+    "train.csv": "f6e4597c142d7d909a13d53b68a8e85c00b9a4c7b5ff40adbb37d6829cc1f4cc",
+    "store.csv": "f56bd124a2849489e6bbb5c000f5fc9640204355e316475c918ae4d089afb344"
+  },
+  "seconds": 1805.1
+}

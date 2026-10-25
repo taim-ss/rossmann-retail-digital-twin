@@ -1,0 +1,153 @@
+{
+  "native_runs": 16,
+  "max_abs_diff": 1.8189894035458565e-11,
+  "all_pass": true,
+  "checks": [
+    {
+      "policy": 0,
+      "source": 0,
+      "z": 0.0,
+      "seed": 1,
+      "max_abs_diff": 0.0,
+      "crn_ok": true,
+      "daily_sales_balance_ok": true
+    },
+    {
+      "policy": 0,
+      "source": 0,
+      "z": 0.0,
+      "seed": 4,
+      "max_abs_diff": 0.0,
+      "crn_ok": true,
+      "daily_sales_balance_ok": true
+    },
+    {
+      "policy": 0,
+      "source": 0,
+      "z": 2.0,
+      "seed": 1,
+      "max_abs_diff": 0.0,
+      "crn_ok": true,
+      "daily_sales_balance_ok": true
+    },
+    {
+      "policy": 0,
+      "source": 0,
+      "z": 2.0,
+      "seed": 4,
+      "max_abs_diff": 0.0,
+      "crn_ok": true,
+      "daily_sales_balance_ok": true
+    },
+    {
+      "policy": 0,
+      "source": 1,
+      "z": 0.0,
+      "seed": 1,
+      "max_abs_diff": 0.0,
+      "crn_ok": true,
+      "daily_sales_balance_ok": true
+    },
+    {
+      "policy": 0,
+      "source": 1,
+      "z": 0.0,
+      "seed": 4,
+      "max_abs_diff": 0.0,
+      "crn_ok": true,
+      "daily_sales_balance_ok": true
+    },
+    {
+      "policy": 0,
+      "source": 1,
+      "z": 2.0,
+      "seed": 1,
+      "max_abs_diff": 0.0,
+      "crn_ok": true,
+      "daily_sales_balance_ok": true
+    },
+    {
+      "policy": 0,
+      "source": 1,
+      "z": 2.0,
+      "seed": 4,
+      "max_abs_diff": 0.0,
+      "crn_ok": true,
+      "daily_sales_balance_ok": true
+    },
+    {
+      "policy": 0,
+      "source": 2,
+      "z": 0.0,
+      "seed": 1,
+      "max_abs_diff": 1.8189894035458565e-11,
+      "crn_ok": true,
+      "daily_sales_balance_ok": true
+    },
+    {
+      "policy": 0,
+      "source": 2,
+      "z": 0.0,
+      "seed": 4,
+      "max_abs_diff": 1.8189894035458565e-11,
+      "crn_ok": true,
+      "daily_sales_balance_ok": true
+    },
+    {
+      "policy": 0,
+      "source": 2,
+      "z": 2.0,
+      "seed": 1,
+      "max_abs_diff": 4.547473508864641e-13,
+      "crn_ok": true,
+      "daily_sales_balance_ok": true
+    },
+    {
+      "policy": 0,
+      "source": 2,
+      "z": 2.0,
+      "seed": 4,
+      "max_abs_diff": 9.094947017729282e-13,
+      "crn_ok": true,
+      "daily_sales_balance_ok": true
+    },
+    {
+      "policy": 1,
+      "source": 0,
+      "z": 0.0,
+      "seed": 1,
+      "max_abs_diff": 0.0,
+      "crn_ok": true,
+      "daily_sales_balance_ok": true
+    },
+    {
+      "policy": 1,
+      "source": 0,
+      "z": 0.0,
+      "seed": 4,
+      "max_abs_diff": 0.0,
+      "crn_ok": true,
+      "daily_sales_balance_ok": true
+    },
+    {
+      "policy": 1,
+      "source": 0,
+      "z": 2.0,
+      "seed": 1,
+      "max_abs_diff": 0.0,
+      "crn_ok": true,
+      "daily_sales_balance_ok": true
+    },
+    {
+      "policy": 1,
+      "source": 0,
+      "z": 2.0,
+      "seed": 4,
+      "max_abs_diff": 0.0,
+      "crn_ok": true,
+      "daily_sales_balance_ok": true
+    }
+  ],
+  "coverage": "four rules x two safety offsets x two lead-time seeds",
+  "native_grid_sweep": false
+}

@@ -1,0 +1,18 @@
+{
+  "source": "Native AnyLogic Animation experiment, P2StoreAnimation04",
+  "frames": 96,
+  "distinct_frames": 87,
+  "interval_ms": 190,
+  "duration_seconds": 18.24,
+  "crop": [
+    72,
+    0,
+    1830,
+    910
+  ],
+  "processing": "Only crop/rescale/palette/video encoding; no generated content",
+  "customer_and_truck_paths": "Illustrative read-only animation; no queueing KPIs",
+  "mp4_produced": true,
+  "mp4_error": null,
+  "gif_sha256": "44fd0c6c43a1fee56b1e1317a55da5d01fe4073c4b45ba63082248c7d4d0f7cd"
+}

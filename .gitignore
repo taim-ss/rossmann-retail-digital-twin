@@ -1,0 +1,45 @@
+# Rossmann data is NOT redistributable (Kaggle competition rules). Never commit it or anything built from it.
+data/raw/
+data/cache/
+data/*.csv
+data/*.sqlite
+*.sqlite
+*.db
+
+# Derived per-store-day files stay local; only aggregates and parameters are committable
+outputs/store_day_demand.csv
+outputs/forecast_oracle.csv
+outputs/forecast_naive.csv
+outputs/forecast_ml.csv
+outputs/forecast_error_distribution.csv
+outputs/_work/
+
+# Demo (synthetic) outputs are for testing only
+outputs/demo/
+
+# Python / tooling
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+~$*.xlsx
+*.pbix
+
+# Synthetic demo data is regenerated on demand
+data/demo/
+excel/demo/
+powerbi/demo/
+
+# Combined-package local artifacts
+anylogic/results/native/
+anylogic/tools/.build/
+*.log
+*.zip
+dist/
+
+# Credentials and local environments
+.env
+.env.*
+!.env.example
+*.pem
+*.key

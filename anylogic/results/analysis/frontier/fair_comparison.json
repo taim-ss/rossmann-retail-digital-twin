@@ -1,0 +1,316 @@
+{
+  "evidence": "Python replica; native checks separate",
+  "grid_runs": 840,
+  "matching": "linear interpolation per seed; no extrapolation",
+  "limitations": [
+    "Same period used for tuning and evaluation",
+    "CI covers lead-time seeds only",
+    "Stock is mean closing daily stock, not continuous-time stock"
+  ],
+  "matched_stock": [
+    {
+      "stock_target": 22000,
+      "arm": "ml",
+      "metric": "fill",
+      "mean": 0.9891215123233463,
+      "ci95_low": 0.9856361797196108,
+      "ci95_high": 0.9926068449270818,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 22000,
+      "arm": "ml",
+      "metric": "promo_fill",
+      "mean": 0.9981139371249454,
+      "ci95_low": 0.9961903974506031,
+      "ci95_high": 1.000037476799288,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 22000,
+      "arm": "ml",
+      "metric": "nonpromo_fill",
+      "mean": 0.978283503964397,
+      "ci95_low": 0.9704891671129989,
+      "ci95_high": 0.9860778408157951,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 22000,
+      "arm": "naive",
+      "metric": "fill",
+      "mean": 0.9377550294945033,
+      "ci95_low": 0.9308335785027246,
+      "ci95_high": 0.9446764804862819,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 22000,
+      "arm": "naive",
+      "metric": "promo_fill",
+      "mean": 0.9168327783111231,
+      "ci95_low": 0.9069341924011585,
+      "ci95_high": 0.9267313642210877,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 22000,
+      "arm": "naive",
+      "metric": "nonpromo_fill",
+      "mean": 0.962971313001616,
+      "ci95_low": 0.9515476928689905,
+      "ci95_high": 0.9743949331342414,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 22000,
+      "arm": "static",
+      "metric": "fill",
+      "mean": 0.9631210305018927,
+      "ci95_low": 0.9536757812875778,
+      "ci95_high": 0.9725662797162076,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 22000,
+      "arm": "static",
+      "metric": "promo_fill",
+      "mean": 0.95868249512399,
+      "ci95_low": 0.9478395425305628,
+      "ci95_high": 0.9695254477174171,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 22000,
+      "arm": "static",
+      "metric": "nonpromo_fill",
+      "mean": 0.9684705201655313,
+      "ci95_low": 0.9566913660849112,
+      "ci95_high": 0.9802496742461513,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 25000,
+      "arm": "ml",
+      "metric": "fill",
+      "mean": 0.9983000587436989,
+      "ci95_low": 0.9972569207576876,
+      "ci95_high": 0.9993431967297102,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 25000,
+      "arm": "ml",
+      "metric": "promo_fill",
+      "mean": 1.0,
+      "ci95_low": 1.0,
+      "ci95_high": 1.0,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 25000,
+      "arm": "ml",
+      "metric": "nonpromo_fill",
+      "mean": 0.9962512256478424,
+      "ci95_low": 0.993950858553847,
+      "ci95_high": 0.9985515927418378,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 25000,
+      "arm": "naive",
+      "metric": "fill",
+      "mean": 0.9666178739326112,
+      "ci95_low": 0.961995160268368,
+      "ci95_high": 0.9712405875968545,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 25000,
+      "arm": "naive",
+      "metric": "promo_fill",
+      "mean": 0.9587968810300609,
+      "ci95_low": 0.9536507610917392,
+      "ci95_high": 0.9639430009683826,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 25000,
+      "arm": "naive",
+      "metric": "nonpromo_fill",
+      "mean": 0.9760440285375461,
+      "ci95_low": 0.9659998514250464,
+      "ci95_high": 0.9860882056500458,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 25000,
+      "arm": "static",
+      "metric": "fill",
+      "mean": 0.9868142302449217,
+      "ci95_low": 0.9827197451284159,
+      "ci95_high": 0.9909087153614274,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 25000,
+      "arm": "static",
+      "metric": "promo_fill",
+      "mean": 0.9902172030821694,
+      "ci95_low": 0.9867045453863058,
+      "ci95_high": 0.993729860778033,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 25000,
+      "arm": "static",
+      "metric": "nonpromo_fill",
+      "mean": 0.982712839477794,
+      "ci95_low": 0.9758827395734941,
+      "ci95_high": 0.9895429393820938,
+      "n_pairs": 10
+    }
+  ],
+  "paired_fill": [
+    {
+      "stock_target": 22000,
+      "a": "ml",
+      "b": "static",
+      "metric": "fill",
+      "mean": 0.026000481821453626,
+      "ci95_low": 0.016929640571111484,
+      "ci95_high": 0.035071323071795765,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 22000,
+      "a": "ml",
+      "b": "static",
+      "metric": "promo_fill",
+      "mean": 0.03943144200095557,
+      "ci95_low": 0.029675755362964677,
+      "ci95_high": 0.04918712863894647,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 22000,
+      "a": "ml",
+      "b": "static",
+      "metric": "nonpromo_fill",
+      "mean": 0.009812983798865948,
+      "ci95_low": -0.0005134888730795421,
+      "ci95_high": 0.02013945647081144,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 22000,
+      "a": "ml",
+      "b": "naive",
+      "metric": "fill",
+      "mean": 0.05136648282884291,
+      "ci95_low": 0.04513134633434794,
+      "ci95_high": 0.05760161932333788,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 22000,
+      "a": "ml",
+      "b": "naive",
+      "metric": "promo_fill",
+      "mean": 0.08128115881382238,
+      "ci95_low": 0.072864000147923,
+      "ci95_high": 0.08969831747972175,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 22000,
+      "a": "ml",
+      "b": "naive",
+      "metric": "nonpromo_fill",
+      "mean": 0.015312190962781113,
+      "ci95_low": 0.004682860946406013,
+      "ci95_high": 0.025941520979156214,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 25000,
+      "a": "ml",
+      "b": "static",
+      "metric": "fill",
+      "mean": 0.011485828498777117,
+      "ci95_low": 0.007517019255879697,
+      "ci95_high": 0.015454637741674536,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 25000,
+      "a": "ml",
+      "b": "static",
+      "metric": "promo_fill",
+      "mean": 0.009782796917830572,
+      "ci95_low": 0.0062701392219669284,
+      "ci95_high": 0.013295454613694215,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 25000,
+      "a": "ml",
+      "b": "static",
+      "metric": "nonpromo_fill",
+      "mean": 0.013538386170048511,
+      "ci95_low": 0.006826996957661053,
+      "ci95_high": 0.02024977538243597,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 25000,
+      "a": "ml",
+      "b": "naive",
+      "metric": "fill",
+      "mean": 0.03168218481108748,
+      "ci95_low": 0.027097304379506013,
+      "ci95_high": 0.03626706524266894,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 25000,
+      "a": "ml",
+      "b": "naive",
+      "metric": "promo_fill",
+      "mean": 0.04120311896993924,
+      "ci95_low": 0.03605699903161749,
+      "ci95_high": 0.04634923890826098,
+      "n_pairs": 10
+    },
+    {
+      "stock_target": 25000,
+      "a": "ml",
+      "b": "naive",
+      "metric": "nonpromo_fill",
+      "mean": 0.020207197110296338,
+      "ci95_low": 0.009931758493784732,
+      "ci95_high": 0.03048263572680794,
+      "n_pairs": 10
+    }
+  ],
+  "paired_stock": [
+    {
+      "a": "ml",
+      "b": "static",
+      "metric": "stock_at_99pct_fill",
+      "mean": -3410.7455787327985,
+      "ci95_low": -4653.67893366275,
+      "ci95_high": -2167.8122238028477,
+      "n_pairs": 10
+    },
+    {
+      "a": "ml",
+      "b": "naive",
+      "metric": "stock_at_99pct_fill",
+      "mean": -7317.6892030252175,
+      "ci95_low": -8333.559661645897,
+      "ci95_high": -6301.818744404537,
+      "n_pairs": 10
+    }
+  ]
+}

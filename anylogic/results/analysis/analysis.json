@@ -1,0 +1,10 @@
+{
+  "runs": 30,
+  "runs_per_seed_min": 3,
+  "end_time_days_unique": [
+    170.5
+  ],
+  "replica_max_abs_diff": 1.0913936421275139e-11,
+  "replica_runs_over_1e-6": 0,
+  "crn_first5_draws_match_java_random": true
+}
